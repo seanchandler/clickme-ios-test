@@ -35,11 +35,10 @@ public class TestBase {
     @Before
     public void setup() throws Exception {
         File appDir = new File("src/test/resources");
-        File app = new File(appDir, "TestApp.app.zip");
+        File app = new File(appDir, "helloworld.app.zip");
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("platformName", "IOS");
         capabilities.setCapability("deviceName", "iPhone 6");
-        capabilities.setCapability("browserName", "Safari");
         capabilities.setCapability("platformVersion", "10.0");
         capabilities.setCapability("automationName", "XCUITest");
         //sometimes environment has performance problems

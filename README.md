@@ -2,7 +2,7 @@
 
 ## `About`
 
-Autmates an iOS app running in an iOS 10 iPhone Simulator using appium and the appium-java-client. The app is Test.app.zip and comes from the appium-java-client unit test
+Automate an iOS app running in an iOS 10 iPhone Simulator using appium and the appium-java-client. The app is a simple hello world app and the source code is available at https://github.com/seanchandler/helloworld-ios-app 
 
 See 
 [appium](https://github.com/appium/appium)
@@ -30,7 +30,7 @@ npm install -g appium@beta
 ```bash
 ./gradlew clean test
 ```
-The test use the Appium server, and uses the AppiumDriverLocalService to start and stop the Appium server within the tests without having to manage Appium manually.
+The test use the Appium server, and uses the AppiumDriverLocalService to start and stop the Appium server within the tests without having to manage Appium manually. Appium deploys helloworld.app to an iPhone Simulator running IOS 10 
 
 If Appium is installed in a location other than **/usr/local/lib/node_modules/appium**, edit TestBase::28
 ```java
