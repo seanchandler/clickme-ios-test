@@ -15,6 +15,7 @@ public class AppTest extends TestBase {
         assertThat(helloButton.getText(), is(equalTo("Hello World")));
         helloButton.click();
         IOSElement alert = ((IOSElement) driver.findElement(MobileBy.name("Alert")));
+        assertThat(alert.isDisplayed(), is(true));
         assertThat(alert.getText(), is(equalTo("Alert")));
     }
 }
