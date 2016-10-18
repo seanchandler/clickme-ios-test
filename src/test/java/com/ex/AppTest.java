@@ -10,9 +10,10 @@ import static org.hamcrest.core.IsEqual.equalTo;
 
 public class AppTest extends TestBase {
 
-    @Test public void helloTest() throws Exception {
-        IOSElement helloButton = ((IOSElement) driver.findElement(MobileBy.name("Hello World")));
-        assertThat(helloButton.getText(), is(equalTo("Hello World")));
+    @Test
+    public void helloTest() throws Exception {
+        IOSElement helloButton = ((IOSElement) driver.findElement(MobileBy.name("Click Me")));
+        assertThat(helloButton.getText(), is(equalTo("Click Me")));
         helloButton.click();
         IOSElement alert = ((IOSElement) driver.findElement(MobileBy.name("Alert")));
         assertThat(alert.isDisplayed(), is(true));

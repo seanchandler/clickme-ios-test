@@ -14,11 +14,9 @@ import org.junit.BeforeClass;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.io.File;
-import java.util.logging.Logger;
 
 public class TestBase {
 
-    protected final Logger LOGGER = Logger.getLogger(this.getClass().getName());
     protected static IOSDriver<MobileElement> driver;
     protected static AppiumDriverLocalService service;
 
@@ -35,7 +33,7 @@ public class TestBase {
     @Before
     public void setup() throws Exception {
         File appDir = new File("src/test/resources");
-        File app = new File(appDir, "helloworld.app.zip");
+        File app = new File(appDir, "clickme.zip");
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("platformName", "IOS");
         capabilities.setCapability("deviceName", "iPhone 6");
