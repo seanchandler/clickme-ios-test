@@ -1,16 +1,14 @@
-# `ios10Test`
-
 ## `About`
 
-Automate an iOS app running in an iOS 10 iPhone Simulator using appium and the appium-java-client. The app is a simple hello world app and the source code is available at https://github.com/seanchandler/helloworld-ios-app 
+Automate an iOS app running in an iOS 10 iPhone Simulator using appium and the appium-java-client. App source code is available in the [clickme-ios-app](https://github.com/seanchandler/clickme-ios-app) repo
 
-See 
+Appium links: 
 [appium](https://github.com/appium/appium)
 [appium-java-client](https://github.com/appium/java-client)
 
 ## `Setup`
 
-Xcode 10 installed
+Xcode installed
 
 Accept the xcode license 
 
